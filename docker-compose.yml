@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  workspace:
+    image: node
+    command: sleep infinity
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+  collibra:
+    image: redhat/ubi8
+    command: sleep infinity
+    working_dir: /workspace
+    environment:
+      - DQ_ADMIN_USER_PASSWORD=Pnbhfvc$0z0o0r7j
+      - DQ_ADMIN_USER_EMAIL=1t4l9y6n@example.com
+    volumes:
+      - .:/workspace
