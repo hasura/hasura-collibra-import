@@ -1,0 +1,219 @@
+Using metadata file:  ./hasura_metadata_2023_06_11_03_21_44_307.json
+[
+  {
+    "resourceType": "Community",
+    "identifier": {
+      "name": "Hasura Community"
+    }
+  },
+  {
+    "resourceType": "Domain",
+    "identifier": {
+      "name": "Hasura Domain",
+      "community": {
+        "name": "Hasura Community"
+      }
+    },
+    "type": {
+      "name": "Physical Data Dictionary"
+    }
+  },
+  {
+    "resourceType": "Asset",
+    "identifier": {
+      "name": "SCHEMA",
+      "domain": {
+        "name": "Hasura Domain",
+        "community": {
+          "name": "Hasura Community"
+        }
+      }
+    },
+    "type": {
+      "name": "Schema"
+    }
+  },
+  {
+    "resourceType": "Asset",
+    "identifier": {
+      "name": "public_accounts",
+      "domain": {
+        "name": "Hasura Domain",
+        "community": {
+          "name": "Hasura Community"
+        }
+      }
+    },
+    "type": {
+      "name": "Table"
+    },
+    "relations": {
+      "dc7546bf-dbdf-4dee-afd5-c6fbd5995ce4:SOURCE": [
+        {
+          "name": "public_users",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "cfd2c8f8-7c3e-452f-a80c-6c8ef3194737:SOURCE": [
+        {
+          "name": "public_transactions",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "429a62aa-68f3-4a1a-960c-5f5736e14980:SOURCE": [
+        {
+          "name": "public_transactions",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "09f0cbc0-6e29-47a3-bde6-37214fff06fd:TARGET": [
+        {
+          "name": "public_transactions",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "e4aab52a-a9cd-4310-955b-6fc56966ff7a:TARGET": [
+        {
+          "name": "public_transactions",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "562f5346-f307-40e0-bd2f-622bedcb9081:TARGET": [
+        {
+          "name": "public_users",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "Asset",
+    "identifier": {
+      "name": "public_transactions",
+      "domain": {
+        "name": "Hasura Domain",
+        "community": {
+          "name": "Hasura Community"
+        }
+      }
+    },
+    "type": {
+      "name": "Table"
+    },
+    "relations": {
+      "cfd2c8f8-7c3e-452f-a80c-6c8ef3194737:TARGET": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "429a62aa-68f3-4a1a-960c-5f5736e14980:TARGET": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "09f0cbc0-6e29-47a3-bde6-37214fff06fd:SOURCE": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "e4aab52a-a9cd-4310-955b-6fc56966ff7a:SOURCE": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "Asset",
+    "identifier": {
+      "name": "public_users",
+      "domain": {
+        "name": "Hasura Domain",
+        "community": {
+          "name": "Hasura Community"
+        }
+      }
+    },
+    "type": {
+      "name": "Table"
+    },
+    "relations": {
+      "dc7546bf-dbdf-4dee-afd5-c6fbd5995ce4:TARGET": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ],
+      "562f5346-f307-40e0-bd2f-622bedcb9081:SOURCE": [
+        {
+          "name": "public_accounts",
+          "domain": {
+            "name": "Hasura Domain",
+            "community": {
+              "name": "Hasura Community"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
